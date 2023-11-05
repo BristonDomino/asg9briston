@@ -51,10 +51,10 @@ class TipCalculator extends StatefulWidget {
   final String title;
 
   @override
-  _TipCalculatorState createState() => _TipCalculatorState();
+  TipCalculatorState createState() => TipCalculatorState();
 }
 
-class _TipCalculatorState extends State<TipCalculator> {
+class TipCalculatorState extends State<TipCalculator> {
   double _billAmount = 0.0;
   // Default to 15%
   double _tipPercentage = 0.15;
@@ -87,7 +87,7 @@ class _TipCalculatorState extends State<TipCalculator> {
               },
               decoration: const InputDecoration(
                 labelText: "Bill Amount",
-                border: OutlineInputBorder(), 
+                border: OutlineInputBorder(),
               ),
             ),
             const SizedBox(height: 20),
